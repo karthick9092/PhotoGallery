@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html ng-app="photogallery">
+<head>
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.css" />
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/lightBox/angular-bootstrap-lightbox.min.css" />
+
+
+<script type="text/javascript" src="js/angularJs/angular.min.js"></script>
+<script type="text/javascript" src="js/angularJs/angular-route.min.js"></script>
+<script type="text/javascript" src="js/commonJs/ui-bootstrap.min.js"></script>
+<script type="text/javascript" src="js/commonJs/jquery.min.js"></script>
+<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/routeSegmentJs/route-segment.js"></script>
+<script type="text/javascript" src="js/routeSegmentJs/view-segment.js"></script>
+<script type="text/javascript" src="js/lightBox/angular-bootstrap-lightbox.min.js"></script>
+<script type="text/javascript" src="js/appModule/appModule.js"></script>
+<script type="text/javascript" src="js/controller/homeController.js"></script>
+<script type="text/javascript" src="js/controller/galleryController.js"></script>
+
+
+</head>
+<body>
+	<div ng-controller="homeController">
+		<form>
+			<div class="form-group">
+				<label for="username">Username :</label> <input type="text"
+					ng-model="userLoginObj.username" name="username" />
+			</div>
+			<div class="form-group">
+				<label for="password">Password :</label> <input type="password"
+					ng-model="userLoginObj.password" name="password" />
+			</div>
+			<div>
+				<input type="button" name="submit" id="submit" value="submit"
+					ng-click="login()" />
+			</div>
+			
+			<a  href="#/sample">sample</a>
+			<a  href="#/gallery">Search Profile</a>
+			
+		</form>
+	</div>
+	
+	<div id="app-view" app-view-segment="0"/>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+	<ul>
+		<li ng-repeat="image in images"><a
+			ng-click="openLightboxModal($index)"> <img
+				ng-src="{{image.thumbUrl}}" class="img-thumbnail">
+		</a></li>
+	</ul>
+</div>
+</body>
+</html>
